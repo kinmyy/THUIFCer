@@ -1,0 +1,4 @@
+FastMarching类中定义的为快速步进法，通过调用fmm函数实现。
+快速步进工具箱先在matlab中单独执行，将计算路径存入txt文件后在算法中绘制出来，未整合到代码中。
+FindPath类中定义的为A*算法，通过调用FindPath函数实现。
+AntColony类中定义的是蚁群算法，通过调用OnStartsimu函数实现。
