@@ -1,0 +1,602 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\THUIFCer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\THUIFCer.ico"
+IDR_THUIFCerTYPE        ICON                    "res\\THUIFCerDoc.ico"
+IDI_ICON_ENTITYTREE     ICON                    "res\\ico_entitytree.ico"
+IDI_ICON_PROPERTYLIST   ICON                    "res\\ico_propertylist.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_CHECKED      BITMAP                  "res\\bmp_checked.bmp"
+IDB_BITMAP_PARTLYCHECKED BITMAP                  "res\\bmp_partly_checked.bmp"
+IDB_BITMAP_UNCHECKED    BITMAP                  "res\\bmp_unchecked.bmp"
+IDB_BITMAP_ROOT         BITMAP                  "res\\bmp_root.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File(&F)"
+    BEGIN
+        MENUITEM "New(&N)\tCtrl+N",             ID_FILE_NEW
+        MENUITEM "Open(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "Save(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "Save as .IFC(&A)...",         ID_FILE_SAVE_ASIFC
+        MENUITEM "Save as .ifcXML(&I)...",      ID_FILE_SAVE_ASIFCXML
+        MENUITEM "Save element tree as .xml",   ID_FILE_SAVE_ENTITYXML
+        MENUITEM "Save current element attribute as .xml", ID_FILE_SAVE_PROPERTYXML
+        MENUITEM SEPARATOR
+        MENUITEM "Recent file..",               ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    END
+    POPUP "3D View"
+    BEGIN
+        MENUITEM "旋转",                          ID_3D_ROTATE
+        MENUITEM "平移",                          ID_3D_PAN
+        MENUITEM "缩放",                          ID_3D_ZOOM
+        MENUITEM SEPARATOR
+        MENUITEM "正立面视角_前面",                    ID_3D_RESETFRONT
+        MENUITEM "正立面视角_侧面",                    ID_3D_RESETSIDE
+        MENUITEM "正俯视视角",                       ID_3D_RESETTOP
+    END
+    POPUP "Edit(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "为构件添加新属性",                    ID_EDIT_ADDNEWPROPERTY
+        MENUITEM SEPARATOR
+        MENUITEM "选项(&O)",                      ID_EDIT_OPTION
+    END
+    POPUP "Analysis(&A)"
+    BEGIN
+        POPUP "Path Simulate"
+        BEGIN
+            MENUITEM "Fast Marching",               ID_PATHSIMULATE_FASTMARCHING
+            MENUITEM "FM ToolBox",                  ID_PATHSIMULATE_FMTOOLBOX
+            MENUITEM "Multi-floor",                 ID_PATHSIMULATE_MF
+            MENUITEM "A star algorithm",            ID_PATHSIMULATE_ASTARALGORITHM
+            MENUITEM "Ant Colony algorithm",        ID_PATHSIMULATE_ANTCOLONYALGORITHM
+            MENUITEM "Multi-floor2",                ID_PATHSIMULATE_MULTI32841
+        END
+    END
+    POPUP "View(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "Help(&H)"
+    BEGIN
+        MENUITEM "About IFC Path(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_ENTITYTREE MENU 
+BEGIN
+    POPUP "右键菜单"
+    BEGIN
+        MENUITEM "显示全部构件",                      ID_ENTITYTREE_ALLSHOW
+        MENUITEM "隐藏全部构件",                      ID_ENTITYTREE_ALLHIDE
+        MENUITEM SEPARATOR
+        MENUITEM "仅显示该组构件",                     ID_ENTITYTREE_GROUPSHOW
+        MENUITEM SEPARATOR
+        MENUITEM "仅显示此构件",                      ID_ENTITYTREE_ONLYSHOW
+        MENUITEM SEPARATOR
+        MENUITEM "添加属性",                        ID_ENTITYTREE_ADDPROPERTY
+        MENUITEM "属性",                          ID_ENTITYTREE_PROPERTY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 THUIFCer"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "THUIFCer 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_THUIFCER_FORM DIALOGEX 0, 0, 256, 202
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC,12,4,300,8
+END
+
+IDD_DIALOG_OPTIONIFC DIALOGEX 0, 0, 289, 300
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IFC"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "名称",IDC_STATIC,5,3,276,292
+    CONTROL         "",IDC_LIST_IFC,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,13,15,260,274
+END
+
+IDD_DIALOG_CARBON DIALOGEX 0, 0, 474, 281
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "THUIFCer - 建筑物固有碳排放分析"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,417,260,50,14
+    CONTROL         "",IDC_CARBON_LIST,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,460,251
+    PUSHBUTTON      "开始计算",IDC_CARBON_BUTTON_CALCULATE,281,260,50,14
+    PUSHBUTTON      "保存计算结果",IDC_CARBON_BUTTON_SAVE,347,260,54,14
+    LTEXT           "碳排放属性:",IDC_STATIC,8,266,44,8
+    EDITTEXT        IDC_CARBON_EDIT,56,260,88,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ADDUPPLATE DIALOGEX 0, 0, 341, 175
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工程量统计 - 楼板"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "加载楼板材料构成表",IDC_BUTTON_ADDUPPLATELOADCOMPOSE,95,157,82,14
+    PUSHBUTTON      "加载材料价格定额表",IDC_BUTTON_ADDUPPLATELOADPRICE,188,157,82,14
+    PUSHBUTTON      "开始计算工程量",IDC_BUTTON_ADDUPPLATE,7,157,77,14
+    PUSHBUTTON      "计算造价",IDC_BUTTON_ADDUPPLATEPRICE,282,157,52,14
+    CONTROL         "",IDC_LIST_ADDUPPLATE,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,6,327,147
+END
+
+IDD_DIALOG_ADDUPWALL DIALOGEX 0, 0, 341, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工程量统计"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "加载材料构成表",IDC_BUTTON_ADDUPWALLLOADCOMPOSE,68,173,67,14
+    PUSHBUTTON      "加载材料价格定额表",IDC_BUTTON_ADDUPWALLLOADPRICE,203,173,82,14
+    PUSHBUTTON      "计算工程量",IDC_BUTTON_ADDUPWALL,7,173,55,14
+    PUSHBUTTON      "计算造价",IDC_BUTTON_ADDUPWALLPRICE,291,173,43,14
+    CONTROL         "",IDC_LIST_ADDUPWALL,"SysListView32",LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,19,327,153
+    PUSHBUTTON      "计算材料构成",IDC_BUTTON_ADDUPWALLCOMPOSE,141,173,56,14
+    COMBOBOX        IDC_COMBO_ADDUPSELECTIFCTYPE,151,3,89,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "选择构件",IDC_STATIC,116,6,34,8
+    LTEXT           "统计属性",IDC_STATIC,247,6,35,8
+    EDITTEXT        IDC_EDIT_ADDUPPROPERTYNAME,282,3,52,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETVALUE DIALOGEX 0, 0, 253, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Path Planning Parameter Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,63,146,50,14
+    PUSHBUTTON      "取消",IDCANCEL,153,146,50,14
+    LTEXT           "Start Position:",IDC_STATIC,35,19,70,13
+    LTEXT           "End Position:",IDC_STATIC,35,66,41,13
+    LTEXT           "Grid Size",IDC_STATIC,38,116,28,8
+    EDITTEXT        IDC_GRIDSIZE,90,114,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,35,37,197,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,36,82,197,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ANTDIALOG DIALOGEX 0, 0, 374, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,61,148,50,14
+    PUSHBUTTON      "取消",IDCANCEL,157,148,50,14
+    LTEXT           "Start Position:",IDC_STATIC,17,19,70,13
+    LTEXT           "End Position:",IDC_STATIC,17,66,41,13
+    LTEXT           "Grid Size",IDC_STATIC,20,116,28,8
+    EDITTEXT        IDC_GRIDSIZE,72,114,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,17,37,197,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,18,82,197,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ant Colony Values",IDC_STATIC,239,20,59,8
+    LTEXT           "Generations:",IDC_STATIC,239,44,42,8
+    EDITTEXT        IDC_GEN,309,42,40,14,ES_AUTOHSCROLL
+    LTEXT           "Attraction enhence:",IDC_STATIC,239,68,65,8
+    EDITTEXT        IDC_ATTR,309,65,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHER,310,92,40,14,ES_AUTOHSCROLL
+    LTEXT           "Pheromone enhence:",IDC_STATIC,239,98,69,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "THUIFCer.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "THUIFCer.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_THUIFCER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DIALOG_CARBON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 467
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DIALOG_ADDUPPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_DIALOG_ADDUPWALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DIALOG_SETVALUE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_ANTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "THUIFCer\n\nTHUIFCer\nTHUIFCer Files (*.ifc)\n.ifc\nTHUIFCer.Document\nTHUIFCer.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "IFC-Path"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ROTATE               "旋转模式"
+    ID_PAN                  "平移模式"
+    ID_ZOOM                 "缩放模式"
+    ID_RESET_FRONT          "重置为标准正面视角"
+    ID_RESET_SIDE           "重置为标准侧面视角"
+    ID_RESET_TOP            "重置为标准顶部视角"
+    ID_UPDATE_IFCVIEW       "更新3D视图"
+    ID_INIT_IFCVIEW         "初始化3D视图"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_UPDATE_ENTITYTREE    "更新实体列表"
+    ID_UPDATE_PROPERTYLIST  "更新属性面板"
+    ID_UPDATE_CLEAR         "清空所有视图以及控件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_OPTION          "编辑选项"
+    ID_ENTITYTREE_PROPERTY  "显示属性"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ANALYSIS_CARBON      "建筑固有碳排放分析"
+    ID_ENTITYTREE_ADDPROPERTY "添加新属性"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\THUIFCer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

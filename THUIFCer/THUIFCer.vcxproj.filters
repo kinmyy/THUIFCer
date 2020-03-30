@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ANT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AntColony.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AntDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cam.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CarbonAnalysisDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CIFCRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvexHull.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dotnet\DockPageBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FastMarching.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FindPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FloorTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FMToolBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IFCProject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MAP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NaviPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Panel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Potential.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rescale.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetValueDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dotnet\sizecbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsPlateDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StatisticsWallDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THUIFCer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THUIFCerDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="THUIFCerView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ANT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AntColony.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AntDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cam.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CarbonAnalysisDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CIFCRender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvexHull.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dotnet\DockPageBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FastMarching.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FindPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FloorTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FMToolBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IFCEngine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IFCProject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="l_heapnode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MAP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="matlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NaviPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Panel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Potential.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rescale.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetValueDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dotnet\sizecbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StatisticsPlateDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StatisticsWallDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THUIFCer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THUIFCerDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THUIFCerView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="vec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bmp_checked.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp_partly_checked.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp_root.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp_unchecked.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico_entitylist.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico_entitytree.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico_propertylist.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\THUIFCer.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\THUIFCer.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\THUIFCerDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="THUIFCer.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="THUIFCer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="v4501v.lib" />
+  </ItemGroup>
+</Project>
